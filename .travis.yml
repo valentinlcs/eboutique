@@ -1,1 +1,7 @@
 language: java
+install:
+ - mvn install
+ - mvn sonar:sonar -Dsonar.projectKey=valentinlcs_eboutique \
+  -Dsonar.organization=valentinlcs-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=f4330c466b8053a5cec9e6ad5e8390cd2cbde9b1
