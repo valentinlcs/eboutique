@@ -2,4 +2,7 @@ language: java
 install:
  - mvn install
  - mvn sonar:sonar \
-  -Dsonar.projectKey=valentinlcs_eboutique
+  -Dsonar.projectKey=$SONAR_PROJECT_KEY \
+  -Dsonar.organization=$SONAR_ORGANIZATION \
+  -Dsonar.host.url=$SONAR_HOST \
+  -Dsonar.login=$SONAR_LOGIN
